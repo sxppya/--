@@ -13,6 +13,8 @@ DOMAIN-SUFFIX,api.izuiyou.com
 DOMAIN-SUFFIX,api.weibo.cn
 # 和平营地更改IP
 DOMAIN-SUFFIX,formal.api.gp.qq.com
+#王者营地
+DOMAIN-SUFFIX,guid.tpns.tencent.com
 # 哔哩哔哩解锁港澳台 更改IP
 #DOMAIN-SUFFIX,api.bilibili.com
 #DOMAIN-SUFFIX,biliapi.net
