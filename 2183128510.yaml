@@ -220,19 +220,19 @@ proxy-groups:
 
   - {name: 香港, <<: *All, filter: "^(?=.*(香港|HK|hk|Hong Kong|HongKong|hongkong))(?!.*(低倍|X|Google|Pornhub|.cn)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/hk.png"}
       
-  - {name: 台湾, <<: *AllBll, filter: "^(?=.*(台湾|新北|彰化|TW|Taiwan)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/tw%20.png"}
+  - {name: 台湾, <<: *All, filter: "^(?=.*(台湾|新北|彰化|TW|Taiwan)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/tw%20.png"}
     
-  - {name: 棒子, <<: *AllBll, filter: "^(?=.*(韩国|首尔|韩)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bangzi.png"}
+  - {name: 棒子, <<: *All, filter: "^(?=.*(韩国|首尔|韩)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bangzi.png"}
     
-  - {name: 日本, <<: *AllBll, filter: "^(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))(?!.*(低倍|0\\.[1-9]X)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/riben.png"}
+  - {name: 日本, <<: *All, filter: "^(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))(?!.*(低倍|0\\.[1-9]X)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/riben.png"}
 
   - {name: 美国, <<: *All, filter: "^(?=.*(美国|US|United States))(?!.*(海外用户|低倍|0\\.[1-9]X)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/usa.png"}
 
-  - {name: 新加坡, <<: *AllBll, filter: "^(?=.*(新加坡|坡|狮城|SG|Singapore))(?!.*(低倍|0\\.[1-9]X)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/xinjiapo.png"}
+  - {name: 新加坡, <<: *All, filter: "^(?=.*(新加坡|坡|狮城|SG|Singapore))(?!.*(低倍|0\\.[1-9]X)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/xinjiapo.png"}
     
   - {name: 澳门, <<: *All, filter: "^(?=.*(澳门)).*$", icon: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/%E5%A8%B1%E4%B9%90.svg"}
     
-  - {name: 低延迟, <<: *AllBll, filter: "^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png"}
+  - {name: 低延迟, <<: *Alll, filter: "^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png"}
     
   - {name: 低倍率, <<: *All, filter: "^(?=.*(低倍|[0\\.[1-9]]|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dibei.png"}
 
