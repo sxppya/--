@@ -30,7 +30,7 @@ external-ui: ./Web/Zash/
 secret: set-your-secret
 p:
   type: http
-  filter: ^(?=.*(香港|日本|台湾|新加坡|美国|韩国|澳门|冰岛|蒙古)).*$
+  filter: ^(?!.*(导航|.com)).*$
   interval: 86400
   health-check:
     enable: true
@@ -59,7 +59,7 @@ proxy-providers:
       additional-prefix: BE
     path: ./BE.yaml
     type: http
-    filter: ^(?=.*(香港|日本|台湾|新加坡|美国|韩国|澳门|冰岛|蒙古)).*$
+    filter: ^(?!.*(导航|.com)).*$
     interval: 86400
     health-check:
       enable: true
