@@ -30,7 +30,7 @@ external-ui: ./Web/Zash/
 secret: set-your-secret
 p:
   type: http
-  filter: ^(?=.*(香港|日本|台湾|新加坡|美国|韩国|澳门|冰岛|蒙古)).*$
+  filter: "^(?!.*(套餐|重置|剩余|到期|订阅|群|账户|流量|有效期|时间|官网|失联|余额)).*$"
   interval: 86400
   health-check:
     enable: true
@@ -59,7 +59,7 @@ proxy-providers:
       additional-prefix: BE
     path: ./BE.yaml
     type: http
-    filter: ^(?=.*(香港|日本|台湾|新加坡|美国|韩国|澳门|冰岛|蒙古)).*$
+    filter: "^(?!.*(套餐|重置|剩余|到期|订阅|群|账户|流量|有效期|时间|官网|失联|余额)).*$"
     interval: 86400
     health-check:
       enable: true
@@ -141,7 +141,7 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
   nameserver-policy:
-    Rule-Set:cn,tld-cn,种子下载,game_cn,steam_cn,Custom_Direct,private:
+    Rule-Set:cn,tld-cn,种子下载,game_cn,steam_cn,private:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   nameserver:
@@ -165,12 +165,10 @@ proxy_groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 proxy-groups:
 - name: 电报
@@ -184,12 +182,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 订阅更新
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gengxin.png
@@ -208,12 +204,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 微软
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/weiruan.png
@@ -226,12 +220,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: Cloudflare
   icon: https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/cloudflare_.svg
@@ -244,12 +236,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: Discord
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/discord.png
@@ -262,12 +252,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: GPT
   icon: https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/gpt.svg
@@ -280,30 +268,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
-  - 🌎 全球直连
-- name: 谷歌Ai
-  icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gemini.png
-  type: select
-  proxies:
-  - 香港
-  - 澳门
-  - 台湾
-  - 新加坡
-  - 日本
-  - 美国
-  - 棒子
-  - 故转
-  - 低延迟
-  - 低倍率
-  - 高级节点
-  - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: TikTok
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/TikTok.png
@@ -316,12 +284,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 油管
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/youtube.svg
@@ -334,12 +300,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 币安
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bian.png
@@ -352,12 +316,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: Google
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/google.svg
@@ -370,12 +332,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: GoogleFCM
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/fcm.png
@@ -388,12 +348,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 微软云
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/weiruanyun.png
@@ -406,12 +364,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: GitHub
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/github.png
@@ -424,12 +380,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: Twitter(X)
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/twitter.png
@@ -442,17 +396,16 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: app定位
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dks.png
   type: select
   proxies:
+  - 🌎 全球直连
   - 香港
   - 澳门
   - 台湾
@@ -460,13 +413,7 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
-  - 低延迟
-  - 低倍率
-  - 高级节点
   - 节点选择
-  - ⛔️ 无网
-  - 🌎 全球直连
 - name: DNS解析
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dns.png
   type: select
@@ -478,12 +425,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: steam
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/steam.png
@@ -496,12 +441,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: game
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/game.png
@@ -514,12 +457,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: bing
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bing.png
@@ -532,12 +473,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: pikpak
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/pikpakx.png
@@ -550,12 +489,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: speed测速
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/speedtext.png
@@ -568,12 +505,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 代理
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gfw.png
@@ -586,12 +521,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 漏网之鱼
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/match.png
@@ -604,12 +537,10 @@ proxy-groups:
   - 日本
   - 美国
   - 棒子
-  - 故转
   - 低延迟
   - 低倍率
   - 高级节点
   - 节点选择
-  - ⛔️ 无网
   - 🌎 全球直连
 - name: 广告拦截
   proxies:
@@ -661,21 +592,6 @@ proxy-groups:
   type: url-test
   use:
   - BE
-- name: 故转
-  type: fallback
-  interval: 300
-  lazy: false
-  proxies:
-  - 香港
-  - 澳门
-  - 台湾
-  - 新加坡
-  - 日本
-  - 美国
-  - 棒子
-  - 低倍率
-  - 低延迟
-  icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/guzhuan.png
 - name: 低延迟
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png
   filter: ^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期)).*$
@@ -722,13 +638,6 @@ rule-anchor:
     behavior: domain
     format: yaml
 rule-providers:
-  Custom_Direct:
-    url: https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct.list
-    path: ./rules/Custom_Direct.list
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
   Custom_Proxy:
     url: https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Proxy.list
     path: ./rules/Custom_Proxy.list
@@ -1022,13 +931,12 @@ rules:
 - Rule-Set,private,🌎 全球直连
 - Rule-Set,privateip,🌎 全球直连,no-resolve
 - Rule-Set,fakeip-filter,🌎 全球直连
-- Rule-Set,Custom_Direct,🌎 全球直连
 - Rule-Set,Custom_Proxy,香港
 - Rule-Set,steam_cn,🌎 全球直连
 - Rule-Set,game_cn,🌎 全球直连
 - Rule-Set,steam,steam
 - Rule-Set,game,game
-- Rule-Set,gemini,谷歌Ai
+- Rule-Set,gemini,GPT
 - Rule-Set,OpenAI,GPT
 - Rule-Set,pikpak,pikpak
 - Rule-Set,cloudflare,Cloudflare
