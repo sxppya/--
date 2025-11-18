@@ -59,17 +59,19 @@ All: &All
   use:
   - BE
   
-proxy-providers: # ← 此函数位置请勿变动！此为模块更新时备份恢复订阅变量范围 ↓
+proxy-providers:
   BE:
     <<: *p
     override:
       additional-prefix: "BE"
     path: ./proxy_provider/BE.yaml
     url: "https://i.stga.cn/api/v1/client/subscribe?token=014669e677c9f0522f7c99e3d6e1944f"
-
-# —————————
-
-# 节点记忆
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com
+      interval: 300
+      timeout: 1000
+      tolerance: 100
 profile: # ← 此函数位置请勿变动！此为模块更新时备份恢复订阅变量范围 ↑
   store-selected: true
   store-fake-ip: true
@@ -96,7 +98,7 @@ sniffer:
 
 # 网卡模块
 tun:
-  enable: true
+  enable: false
   device: meta
   stack: gvisor
   dns-hijack: [any:53, tcp://any:53]
@@ -155,23 +157,23 @@ dns:
 #------------------------------------------------------------------------------
 proxies:
 
-  - {name: 自建1, type: vmess, server: yg6.ygkkk.dpdns.org, port: 80, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
+  - {name: 搭建1, type: vmess, server: yg6.ygkkk.dpdns.org, port: 80, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
   
-  - {name: 自建2, type: vmess, server: yg1.ygkkk.dpdns.org, port: 443, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, tls: true, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
+  - {name: 搭建2, type: vmess, server: yg1.ygkkk.dpdns.org, port: 443, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, tls: true, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
   
-  - {name: 自建3, type: vless, server: 107.173.86.169, port: 37167, uuid: 80c11981-d74d-4d22-a16b-87308be49881, network: tcp, tls: true, servername: apple.com, flow: xtls-rprx-vision, client-fingerprint: chrome, reality-opts: { public-key: UTauE6d180AnB8LDWbT7o0hoUJI9_qYIq2hWXdm0Uzg, short-id: 1654d89c }, udp: true }
+  - {name: 搭建3, type: vless, server: 107.173.86.169, port: 37167, uuid: 80c11981-d74d-4d22-a16b-87308be49881, network: tcp, tls: true, servername: apple.com, flow: xtls-rprx-vision, client-fingerprint: chrome, reality-opts: { public-key: UTauE6d180AnB8LDWbT7o0hoUJI9_qYIq2hWXdm0Uzg, short-id: 1654d89c }, udp: true }
   
-  - {name: 自建4, type: ss, server: 107.173.86.169, port: 15386, cipher: 2022-blake3-aes-128-gcm, password: "bzrwuJy+K5rExFpm363KVw==", udp: true }
+  - {name: 搭建4, type: ss, server: 107.173.86.169, port: 15386, cipher: 2022-blake3-aes-128-gcm, password: "bzrwuJy+K5rExFpm363KVw==", udp: true }
   
-  - {name: 自建5, type: vmess, server: 107.173.86.169, port: 65222, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: www.bing.com, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: www.bing.com } }, udp: true }
+  - {name: 搭建5, type: vmess, server: 107.173.86.169, port: 65222, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: www.bing.com, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: www.bing.com } }, udp: true }
   
-  - {name: 自建6, type: hysteria2, server: 107.173.86.169, port: 30223, password: 80c11981-d74d-4d22-a16b-87308be49881, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true }
+  - {name: 搭建6, type: hysteria2, server: 107.173.86.169, port: 30223, password: 80c11981-d74d-4d22-a16b-87308be49881, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true }
 
   - {name: ⛔️ 无网, type: reject}
-  - {name: 🌎 全球直连, type: direct, udp: true}
+  - {name: 🌎 全球直连, type: direct, udp: true, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
   - {name: 🌐 DNS_Hijack, type: dns}
   
-self_nodes: &self_nodes [自建1, 自建2, 自建3, 自建4, 自建5, 自建6]
+self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, 搭建5, 搭建6]
 
 proxy_groups: &proxy_groups {type: select, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
 
@@ -244,8 +246,8 @@ proxy-groups:
   - {name: 新加坡, <<: *All, filter: "^(?=.*(新加坡|坡|狮城|SG|Singapore))(?!.*(低倍|0\\.[1-9]X)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/xinjiapo.png"}
     
   - {name: 澳门, <<: *All, filter: "^(?=.*(澳门)).*$", icon: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/%E5%A8%B1%E4%B9%90.svg"}
- 
-  - {name: 备用, type: select, proxies: *self_nodes, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png"}
+  
+  - {name: 备用, type: select, proxies: *self_nodes, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
     
 #  - {name: 低延迟, <<: *AllBll, filter: "^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png"}
     
