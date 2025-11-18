@@ -182,7 +182,7 @@ CNproxy_groups: &CNproxy_groups {type: select, proxies: [🌎 全球直连, 香�
 proxy-groups:
   - {name: 电报, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/telegram.png"}
     
-  - {name: 订阅更新, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gengxin.png", proxies: [🌎 全球直连, 香港], type: select}
+  - {name: 订阅更新, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gengxin.png", proxies: [🌎 全球直连, 香港], type: url-test, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
   
   - {name: Apple, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/Apple.png"}
     
@@ -247,7 +247,7 @@ proxy-groups:
     
   - {name: 澳门, <<: *All, filter: "^(?=.*(澳门)).*$", icon: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/%E5%A8%B1%E4%B9%90.svg"}
   
-  - {name: 备用, type: select, proxies: *self_nodes, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
+  - {name: 备用, type: url-test, proxies: *self_nodes, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
     
 #  - {name: 低延迟, <<: *AllBll, filter: "^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png"}
     
