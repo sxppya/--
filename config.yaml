@@ -54,7 +54,7 @@ All:
 
 proxy-providers:
   BE:
-    url: https://i.stga.cn/api/v1/client/subscribe?token=64455525cb81937694aac7c35cecb93f
+    url: https://i.stga.cn/api/v1/client/subscribe?token=014669e677c9f0522f7c99e3d6e1944f
     override:
       additional-prefix: BE
     path: ./BE.yaml
@@ -167,7 +167,6 @@ proxy_groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 proxy-groups:
@@ -184,7 +183,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 订阅更新
@@ -206,7 +204,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 微软
@@ -222,23 +219,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
-  - 节点选择
-  - 🌎 全球直连
-- name: Cloudflare
-  icon: https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/cloudflare_.svg
-  type: select
-  proxies:
-  - 香港
-  - 澳门
-  - 台湾
-  - 新加坡
-  - 日本
-  - 美国
-  - 棒子
-  - 低延迟
-  - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: Discord
@@ -254,7 +234,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: GPT
@@ -270,7 +249,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: TikTok
@@ -286,7 +264,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 油管
@@ -302,23 +279,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
-  - 节点选择
-  - 🌎 全球直连
-- name: 币安
-  icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bian.png
-  type: select
-  proxies:
-  - 香港
-  - 澳门
-  - 台湾
-  - 新加坡
-  - 日本
-  - 美国
-  - 棒子
-  - 低延迟
-  - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: Google
@@ -334,7 +294,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: GoogleFCM
@@ -350,7 +309,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 微软云
@@ -366,7 +324,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: GitHub
@@ -382,7 +339,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: Twitter(X)
@@ -398,7 +354,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: app定位
@@ -427,7 +382,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: steam
@@ -443,7 +397,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: game
@@ -459,7 +412,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: bing
@@ -475,7 +427,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: pikpak
@@ -491,7 +442,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: speed测速
@@ -507,7 +457,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 代理
@@ -523,7 +472,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 漏网之鱼
@@ -539,7 +487,6 @@ proxy-groups:
   - 棒子
   - 低延迟
   - 低倍率
-  - 高级节点
   - 节点选择
   - 🌎 全球直连
 - name: 广告拦截
@@ -601,12 +548,6 @@ proxy-groups:
 - name: 低倍率
   icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dibei.png
   filter: ^(?=.*(低倍|[0\.[1-9]x]|Hong Kong)).*$
-  type: url-test
-  use:
-  - BE
-- name: 高级节点
-  icon: https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png
-  filter: ^(?=.*(iepl|IEPL|(?<!\.)[[1-9][0-9]*x])).*$
   type: url-test
   use:
   - BE
@@ -725,13 +666,6 @@ rule-providers:
   OpenAI:
     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs
     path: ./rules/openai.mrs
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-  cloudflare:
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs
-    path: ./rules/cloudflare.mrs
     type: http
     behavior: domain
     format: mrs
@@ -904,13 +838,6 @@ rule-providers:
     behavior: ipcidr
     format: mrs
     interval: 86400
-  cloudflareip:
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.mrs
-    path: ./rules/cloudflare.mrs
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
   twitterip:
     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/twitter.mrs
     path: ./rules/twitter.mrs
@@ -939,8 +866,6 @@ rules:
 - Rule-Set,gemini,GPT
 - Rule-Set,OpenAI,GPT
 - Rule-Set,pikpak,pikpak
-- Rule-Set,cloudflare,Cloudflare
-- Rule-Set,cloudflareip,Cloudflare,no-resolve
 - Domain-Suffix,iturrit.com,电报
 - Rule-Set,telegram,电报,no-resolve
 - Rule-Set,twitter,Twitter(X)
@@ -956,7 +881,7 @@ rules:
 - Rule-Set,bing,bing
 - Rule-Set,onedrive,微软云
 - Rule-Set,Microsoft,微软
-- Rule-Set,Binance,币安
+- Rule-Set,Binance,香港
 - Rule-Set,tld-cn,🌎 全球直连
 - Rule-Set,cn,🌎 全球直连
 - Rule-Set,tld-!cn,代理
