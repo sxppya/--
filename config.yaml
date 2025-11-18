@@ -372,10 +372,10 @@ rules:
   - Rule-Set,game_cn,🌎 全球直连 
   - Rule-Set,steam,steam
   - Rule-Set,game,game
-  - Rule-Set,google,Google
-  - Rule-Set,googleip,Google,no-resolve
   - Rule-Set,gemini,GPT
   - Rule-Set,OpenAI,GPT
+  - Rule-Set,google,Google
+  - Rule-Set,googleip,Google,no-resolve
   - Rule-Set,emby,emby
   - Domain-Suffix,iturrit.com,电报
   - Rule-Set,telegram,电报,no-resolve
