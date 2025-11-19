@@ -269,7 +269,7 @@ rule-providers:
        
   GitHub加速: {<<: *RuleDefault, path: ./rules/github加速.list, url: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/rule/github%E5%8A%A0%E9%80%9F.list"}
   
-  app定位: {<<: *RuleDefault, path: ./rules/app定位.list, url: "https://raw.githubusercontent.com/sxppya/rule/refs/heads/master/applocation.list"}
+  app定位: {<<: *RuleDefault, path: ./rules/app定位.list, url: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/rule/applocation.list"}
   
   emby: {<<: *RuleDefault, path: ./rules/emby.list, url: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/rule/emby.list"}
   
