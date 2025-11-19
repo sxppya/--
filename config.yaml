@@ -170,7 +170,7 @@ proxies:
   - {name: 搭建6, type: hysteria2, server: 107.173.86.169, port: 30223, password: 80c11981-d74d-4d22-a16b-87308be49881, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true }
 
   - {name: ⛔️ 无网, type: reject}
-  - {name: 🌎 全球直连, type: direct, udp: true, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
+  - {name: 🌎 全球直连, type: direct, udp: true}
   - {name: 🌐 DNS_Hijack, type: dns}
   
 self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, 搭建5, 搭建6]
