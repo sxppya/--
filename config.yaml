@@ -179,7 +179,7 @@ proxy_groups: &proxy_groups {type: select, proxies: [香港, 澳门, 台湾, 新
 
 CNproxy_groups: &CNproxy_groups {type: select, proxies: [🌎 全球直连, 香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 节点选择]}
 
-xiazaishipin: &xiazaishipin {type: select, proxies: [低倍率, 备用, 节点选择, 🌎 全球直连]}
+qtemby: &qtemby {type: select, proxies: [备用, 低倍率, 节点选择, 🌎 全球直连]}
 # —————————
 proxy-groups:
   - {name: 电报, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/telegram.png"}
@@ -224,7 +224,7 @@ proxy-groups:
 
   - {name: bing, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bing.png"}
 
-  - {name: emby, <<: *xiazaishipin, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/emby.png"}
+  - {name: emby, <<: *qtemby, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/emby.png"}
 
   - {name: speed测速, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/speedtext.png"}
 
@@ -254,6 +254,8 @@ proxy-groups:
 #  - {name: 低延迟, <<: *AllBll, filter: "^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png"}
     
   - {name: 低倍率, <<: *All, filter: "^(?=.*(低倍|[0\\.[1-9]]|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dibei.png"}
+
+  - {name: HKEmby, <<: *All, filter: "^(?=.*(低倍|Emby|0.5)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/emby.png"}
 
 #  - {name: 高级节点, <<: *All, filter: "^(?=.*(iepl|IEPL|(?<!\\.)[[1-9][0-9]*x])).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png"}
 
@@ -378,7 +380,7 @@ rules:
   - Rule-Set,OpenAI,GPT
   - Rule-Set,google,Google
   - Rule-Set,googleip,Google,no-resolve
-  - Domain-Suffix,e.beupisp.com,emby
+  - Domain-Suffix,e.beupisp.com,HKEmby
   - Rule-Set,emby,emby
   - Domain-Suffix,iturrit.com,电报
   - Rule-Set,telegram,电报,no-resolve
