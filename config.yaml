@@ -178,6 +178,8 @@ self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, 搭建5, 搭建6]
 proxy_groups: &proxy_groups {type: select, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
 
 CNproxy_groups: &CNproxy_groups {type: select, proxies: [🌎 全球直连, 香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 节点选择]}
+
+xiazaishipin: &xiazaishipin {type: select, proxies: [低倍率, 备用, 节点选择, 🌎 全球直连]}
 # —————————
 proxy-groups:
   - {name: 电报, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/telegram.png"}
@@ -222,7 +224,7 @@ proxy-groups:
 
   - {name: bing, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bing.png"}
 
-  - {name: emby, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/emby.png"}
+  - {name: emby, <<: *xiazaishipin, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/emby.png"}
 
   - {name: speed测速, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/speedtext.png"}
 
