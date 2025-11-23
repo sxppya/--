@@ -376,6 +376,7 @@ rules:
   - Rule-Set,OpenAI,GPT
   - Rule-Set,google,Google
   - Rule-Set,googleip,Google,no-resolve
+  - Domain-Suffix,e.beupisp.com,emby
   - Rule-Set,emby,emby
   - Domain-Suffix,iturrit.com,电报
   - Rule-Set,telegram,电报,no-resolve
