@@ -161,13 +161,13 @@ proxies:
   
   - {name: 搭建2, type: vmess, server: yg1.ygkkk.dpdns.org, port: 443, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, tls: true, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
   
-  - {name: 搭建3, type: vless, server: 107.173.86.169, port: 37167, uuid: 80c11981-d74d-4d22-a16b-87308be49881, network: tcp, tls: true, servername: apple.com, flow: xtls-rprx-vision, client-fingerprint: chrome, reality-opts: { public-key: UTauE6d180AnB8LDWbT7o0hoUJI9_qYIq2hWXdm0Uzg, short-id: 1654d89c }, udp: true }
+  - {name: 搭建3, type: vless, server: 104.129.54.90, port: 37167, uuid: 80c11981-d74d-4d22-a16b-87308be49881, network: tcp, tls: true, servername: apple.com, flow: xtls-rprx-vision, client-fingerprint: chrome, reality-opts: { public-key: UTauE6d180AnB8LDWbT7o0hoUJI9_qYIq2hWXdm0Uzg, short-id: 1654d89c }, udp: true }
   
-  - {name: 搭建4, type: ss, server: 107.173.86.169, port: 15386, cipher: 2022-blake3-aes-128-gcm, password: "bzrwuJy+K5rExFpm363KVw==", udp: true }
+  - {name: 搭建4, type: ss, server: 104.129.54.90, port: 15386, cipher: 2022-blake3-aes-128-gcm, password: "bzrwuJy+K5rExFpm363KVw==", udp: true }
   
-  - {name: 搭建5, type: vmess, server: 107.173.86.169, port: 65222, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: www.bing.com, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: www.bing.com } }, udp: true }
+  - {name: 搭建5, type: vmess, server: 104.129.54.90, port: 65222, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: www.bing.com, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: www.bing.com } }, udp: true }
   
-  - {name: 搭建6, type: hysteria2, server: 107.173.86.169, port: 30223, password: 80c11981-d74d-4d22-a16b-87308be49881, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true }
+  - {name: 搭建6, type: hysteria2, server: 104.129.54.90, port: 30223, password: 80c11981-d74d-4d22-a16b-87308be49881, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true }
 
   - {name: ⛔️ 无网, type: reject}
   - {name: 🌎 全球直连, type: direct, udp: true}
