@@ -335,7 +335,7 @@ rule-providers:
 
 #  pikpak: {<<: *Domain, path: ./rules/pikpak.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/pikpak.mrs"}
 
-#  广告: {<<: *Domain, path: ./rules/mihomo.mrs, url: "https://anti-ad.net/mihomo.mrs"}
+  广告: {<<: *Domain, path: ./rules/mihomo.mrs, url: "https://anti-ad.net/mihomo.mrs"}
 
   speed测速: {<<: *Domain, path: ./rules/speedtest.mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/speedtest.mrs"}
   
@@ -364,7 +364,7 @@ rules:
   - Rule-Set,反诈,广告拦截
 #  - Rule-Set,cloudflare,DNS解析
 #  - Rule-Set,cloudflareip,DNS解析,no-resolve  
-#  - Rule-Set,广告,广告拦截
+  - Rule-Set,广告,广告拦截
   - Rule-Set,speed测速,speed测速
   - Rule-Set,app定位,app定位
   - Rule-Set,种子下载,🌎 全球直连 
