@@ -215,11 +215,11 @@ proxy-groups:
 
   - {name: GoogleFCM, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/fcm.png"}
     
-  - {name: 微软云, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/weiruanyun.png"}
+#  - {name: 微软云, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/weiruanyun.png"}
     
   - {name: GitHub, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/github.png"}
 
-  - {name: Twitter(X), <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/twitter.png"}
+#  - {name: Twitter(X), <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/twitter.png"}
     
   - {name: app定位, <<: *CNproxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dks.png"}
 
@@ -227,7 +227,7 @@ proxy-groups:
 
   - {name: steam, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/steam.png"}
 
-  - {name: game, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/game.png"}
+#  - {name: game, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/game.png"}
 
   - {name: bing, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/bing.png"}
 
@@ -382,7 +382,7 @@ rules:
   - Rule-Set,steam_cn,🌎 全球直连
   - Rule-Set,game_cn,🌎 全球直连 
   - Rule-Set,steam,steam
-  - Rule-Set,game,game
+  - Rule-Set,game,steam
   - Rule-Set,gemini,GPT
   - Rule-Set,OpenAI,GPT
   - Rule-Set,google,Google
@@ -391,8 +391,8 @@ rules:
   - Rule-Set,emby,emby
   - Domain-Suffix,iturrit.com,电报
   - Rule-Set,telegram,电报,no-resolve
-  - Rule-Set,twitter,Twitter(X)
-  - Rule-Set,twitterip,Twitter(X),no-resolve  
+  - Rule-Set,twitter,电报
+  - Rule-Set,twitterip,电报,no-resolve  
   - Rule-Set,gitHub,GitHub
   - Rule-Set,Discord,Discord
   - Rule-Set,TikTok,TikTok
@@ -400,7 +400,7 @@ rules:
   - Rule-Set,youTube,油管 
   - Rule-Set,Apple,Apple
   - Rule-Set,bing,bing
-  - Rule-Set,onedrive,微软云
+  - Rule-Set,onedrive,微软
   - Rule-Set,Microsoft,微软
   - Rule-Set,Binance,新加坡
   - Rule-Set,tld-cn,🌎 全球直连
