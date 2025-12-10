@@ -184,6 +184,10 @@ self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, AI备用, 搭建6]
 
 proxy_groups: &proxy_groups {type: select, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
 
+proxy_dns: &proxy_dns {type: fallback, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
+
+AIBY: &AIBY {type: fallback, proxies: [台湾, 日本, 美国, AI备用, 新加坡, 备用, 节点选择]}
+
 CNproxy_groups: &CNproxy_groups {type: select, proxies: [🌎 全球直连, 香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 节点选择]}
 
 qtemby: &qtemby {type: select, proxies: [备用, 低倍率, 节点选择, 🌎 全球直连]}
@@ -201,7 +205,7 @@ proxy-groups:
     
   - {name: Discord, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/discord.png"}
 
-  - {name: GPT, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/gpt.svg"}
+  - {name: GPT, <<: *AIBY, icon: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/gpt.svg"}
   
 #  - {name: 谷歌Ai, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gemini.png"}
 
@@ -223,7 +227,7 @@ proxy-groups:
     
   - {name: app定位, <<: *CNproxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dks.png"}
 
-  - {name: DNS解析, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dns.png"}
+  - {name: DNS解析, <<: *proxy_dns, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/dns.png"}
 
   - {name: steam, <<: *proxy_groups, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/steam.png"}
 
