@@ -184,9 +184,9 @@ self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, 搭建5]
 
 proxy_groups: &proxy_groups {type: select, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
 
-proxy_dns: &proxy_dns {type: fallback, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
+proxy_dns: &proxy_dns {type: fallback, include-all: true, interval: 300, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
 
-AIBY: &AIBY {type: fallback, proxies: [台湾, 日本, 美国, 新加坡, AI备用, 备用, 节点选择]}
+AIBY: &AIBY {type: fallback, include-all: true, interval: 300, proxies: [台湾, 日本, 美国, 新加坡, AI备用, 备用, 节点选择]}
 
 CNproxy_groups: &CNproxy_groups {type: select, proxies: [🌎 全球直连, 香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 节点选择]}
 
@@ -260,7 +260,7 @@ proxy-groups:
     
   - {name: 澳门, <<: *All, filter: "^(?=.*(澳门)).*$", icon: "https://raw.githubusercontent.com/sxppya/Custom_OpenClash_Rules/refs/heads/main/icon/%E5%A8%B1%E4%B9%90.svg"}
   
-  - {name: 备用, type: fallback, proxies: *self_nodes, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
+  - {name: 备用, type: fallback, include-all: true, interval: 300, proxies: *self_nodes, icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/gaobei.png"}
     
 #  - {name: 低延迟, <<: *AllBll, filter: "^(?!.*(低倍|X|Google|Pornhub|剩余|距离|到期|Emby)).*$", icon: "https://raw.githubusercontent.com/sxppya/--/refs/heads/main/icon/diyanchi.png"}
     
