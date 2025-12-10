@@ -172,7 +172,7 @@ proxies:
   
   - {name: 搭建4, type: vmess, server: 104.129.54.90, port: 65222, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: www.bing.com, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: www.bing.com } }, udp: true }
 
-  - {name: 搭建5, type: vmess, server: yg6.ygkkk.dpdns.org, port: 80, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
+  - {name: AI备用, type: ss, server: naaphznv.sph7km6bv.gtmzidong.top, port: 52124, cipher: aes-128-gcm, password: f2cd8c5b-0637-4225-b391-e9e3a53974a8, udp: true}
   
   - {name: 搭建6, type: vmess, server: yg1.ygkkk.dpdns.org, port: 443, uuid: 80c11981-d74d-4d22-a16b-87308be49881, alterId: 0, cipher: auto, network: ws, tls: true, servername: shs.119120112.xyz, ws-opts: { path: "/80c11981-d74d-4d22-a16b-87308be49881-vm?ed=2048", headers: { Host: shs.119120112.xyz } }, udp: true }
 
@@ -180,7 +180,7 @@ proxies:
   - {name: 🌎 全球直连, type: direct, udp: true}
   - {name: 🌐 DNS_Hijack, type: dns}
   
-self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, 搭建5, 搭建6]
+self_nodes: &self_nodes [搭建1, 搭建2, 搭建3, 搭建4, AI备用, 搭建6]
 
 proxy_groups: &proxy_groups {type: select, proxies: [香港, 澳门, 台湾, 新加坡, 日本, 美国, 棒子, 低倍率, 备用, 节点选择, 🌎 全球直连]}
 
