@@ -65,7 +65,7 @@ proxy-providers:
     override:
       additional-prefix: "BE"
     path: ./proxy_provider/BE.yaml
-    url: "https://i.stga.cn/api/v1/client/subscribe?token=4fdef30ad64911f0a5170aafc27bd6dc"
+    url: "填入订阅链接"
     health-check:
       enable: true
       url: https://cp.cloudflare.com
