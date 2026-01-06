@@ -211,6 +211,7 @@ PROCESS-NAME,com.oplus.appdetail
   IP-CIDR,110.156.169.153/32
   IP-CIDR,124.232.160.125/32
   IP-CIDR,111.7.93.68/32
+ DOMAIN-SUFFIX,adobe.io
  DOMAIN,ic.adobe.io
  DOMAIN,cc-api-data.adobe.io
  DOMAIN,cctypekit.adobe.io
