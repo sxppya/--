@@ -215,3 +215,4 @@ PROCESS-NAME,com.oplus.appdetail
  DOMAIN,ic.adobe.io
  DOMAIN,cc-api-data.adobe.io
  DOMAIN,cctypekit.adobe.io
+ Domain-Suffix,api.dou-plus.com
