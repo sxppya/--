@@ -11,3 +11,8 @@ DOMAIN-Suffix,movie.barrybarry.top
 
 #墨云阁
 DOMAIN-Suffix,mobaiemby.site
+
+#反代
+DOMAIN-Suffix,cu.v2go.cc.cd
+DOMAIN-Suffix,ct.v2go.cc.cd
+DOMAIN-Suffix,cm.v2go.cc.cd
