@@ -1,5 +1,5 @@
 # 抖音更改IP
-DOMAIN-SUFFIX,amemv.com
+#DOMAIN-SUFFIX,amemv.com
 # 快手更改IP
 #DOMAIN-SUFFIX,ksapisrv.com
 # 小红书更改IP
@@ -21,13 +21,3 @@ DOMAIN-SUFFIX,api.pipix.com
 #皮皮搞笑更改IP
 DOMAIN-SUFFIX,alfile.ippzone.com
 DOMAIN-SUFFIX,api.ippzone.com
-#贴吧ip
-DOMAIN-SUFFIX,www.baidu.com
-DOMAIN-SUFFIX,tieba.baidu.com
-DOMAIN-SUFFIX,tbmsg.baidu.com
-DOMAIN-SUFFIX,tb5.bdstatic.com
-DOMAIN-SUFFIX,fclog.baidu.com
-DOMAIN-SUFFIX,gsp0.baidu.com
-DOMAIN-SUFFIX,hm.baidu.com
-DOMAIN-SUFFIX,tb.himg.baidu.com
-DOMAIN-SUFFIX,tiebapic.baidu.com
